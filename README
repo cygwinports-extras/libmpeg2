@@ -1,0 +1,97 @@
+mpeg2dec
+------------------------------------------
+libmpeg2 is a free library for decoding mpeg-2 and mpeg-1 video streams.
+
+Runtime requirements:
+  cygwin-1.5.19-4
+  libSDL-1.2.9-1
+  libXv1-1.0.1-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.19-4
+  autoconf2.5-2.59-3
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  cygport-0.1.93-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  libtool1.5-1.5.22-1
+  make-3.80-1
+  sed-4.1.4-1
+
+Canonical website:
+  http://libmpeg2.sourceforge.net/
+
+Canonical download:
+  http://libmpeg2.sourceforge.net/files/
+
+-------------------------------------------
+
+Build instructions:
+  unpack mpeg2dec-0.4.0b-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./mpeg2dec-0.4.0b-X.cygport all
+
+This will create:
+  /usr/src/mpeg2dec-0.4.0b-X-src.tar.bz2
+  /usr/src/mpeg2dec-0.4.0b-X.tar.bz2
+  /usr/src/libmpeg2_0-0.4.0b-X.tar.bz2
+  /usr/src/libmpeg2-devel-0.4.0b-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the main package:
+
+  /usr/bin/corrupt_mpeg2.exe
+  /usr/bin/extract_mpeg2.exe
+  /usr/bin/mpeg2dec.exe
+  /usr/share/doc/Cygwin/mpeg2dec-0.4.0b.README
+  /usr/share/doc/mpeg2dec-0.4.0b/AUTHORS
+  /usr/share/doc/mpeg2dec-0.4.0b/COPYING
+  /usr/share/doc/mpeg2dec-0.4.0b/ChangeLog
+  /usr/share/doc/mpeg2dec-0.4.0b/CodingStyle
+  /usr/share/doc/mpeg2dec-0.4.0b/INSTALL
+  /usr/share/doc/mpeg2dec-0.4.0b/NEWS
+  /usr/share/doc/mpeg2dec-0.4.0b/README
+  /usr/share/doc/mpeg2dec-0.4.0b/TODO
+  /usr/share/doc/mpeg2dec-0.4.0b/libmpeg2.txt
+  /usr/share/doc/mpeg2dec-0.4.0b/sample1.c
+  /usr/share/doc/mpeg2dec-0.4.0b/sample2.c
+  /usr/share/doc/mpeg2dec-0.4.0b/sample3.c
+  /usr/share/doc/mpeg2dec-0.4.0b/sample4.c
+  /usr/share/doc/mpeg2dec-0.4.0b/sample5.c
+  /usr/share/doc/mpeg2dec-0.4.0b/sample6.c
+  /usr/share/man/man1/extract_mpeg2.1.gz
+  /usr/share/man/man1/mpeg2dec.1.gz
+
+Files included in the runtime library package:
+
+  /usr/bin/cygmpeg2-0.dll
+  /usr/bin/cygmpeg2convert-0.dll
+
+Files included in the devel package:
+
+  /usr/include/mpeg2dec/mpeg2.h
+  /usr/include/mpeg2dec/mpeg2convert.h
+  /usr/lib/libmpeg2.a
+  /usr/lib/libmpeg2.dll.a
+  /usr/lib/libmpeg2.la
+  /usr/lib/libmpeg2convert.a
+  /usr/lib/libmpeg2convert.dll.a
+  /usr/lib/libmpeg2convert.la
+  /usr/lib/pkgconfig/libmpeg2.pc
+  /usr/lib/pkgconfig/libmpeg2convert.pc
+
+------------------
+
+Port Notes:
+
+----- version 0.4.0b-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
