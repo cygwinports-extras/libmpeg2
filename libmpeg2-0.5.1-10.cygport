@@ -3,13 +3,12 @@ HOMEPAGE="http://libmpeg2.sourceforge.net/"
 SRC_URI="http://libmpeg2.sourceforge.net/files/${P}.tar.gz"
 SRC_DIR="${P%[a-z]}"
 
+PKG_NAMES="${PN} ${PN}_0 ${PN}-devel mpeg2dec"
+PKG_HINTS='src runtime devel bin'
+libmpeg2_0_CONTENTS='usr/bin/*-0.dll usr/share/doc/'
+libmpeg2_devel_CONTENTS='usr/include/ usr/lib/'
+mpeg2dec_CONTENTS='usr/bin/*.exe usr/share/man/'
+
 CYGCONF_ARGS='--enable-shared --disable-dependency-tracking --enable-sdl --with-x'
 
 DOCS='CodingStyle doc/libmpeg2.txt doc/sample*.c'
-
-PKG_NAMES="${PN} ${PN}_0 ${PN}-devel mpeg2dec"
-PKG_HINTS='src runtime devel bin'
-PKG_CONTENTS[0]=	# empty
-PKG_CONTENTS[1]='usr/bin/*-0.dll usr/share/doc/'
-PKG_CONTENTS[2]='usr/include/ usr/lib/'
-PKG_CONTENTS[3]='usr/bin/*.exe usr/share/man/'
