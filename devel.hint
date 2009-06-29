@@ -1,5 +1,5 @@
 category: Video
-requires: cygwin libmpeg2_0
+requires: libmpeg2_0
 external-source: libmpeg2
 sdesc: "MPEG1/2 video library (development)"
 ldesc: "libmpeg2 is a free library for decoding mpeg-2 and mpeg-1 video

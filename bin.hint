@@ -1,5 +1,5 @@
 category: Video
-requires: cygwin libgcc1 libmpeg2_0 libSDL1.2_0 libX11_6 libXext6
+requires: libgcc1 libmpeg2_0 libSDL1.2_0 libX11_6 libXext6
 external-source: libmpeg2
 sdesc: "MPEG1/2 video library (apps)"
 ldesc: "libmpeg2 is a free library for decoding mpeg-2 and mpeg-1 video
