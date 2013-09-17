@@ -1,6 +1,0 @@
-category: Video
-requires: libgcc1
-external-source: libmpeg2
-sdesc: "MPEG1/2 video library (runtime)"
-ldesc: "libmpeg2 is a free library for decoding mpeg-2 and mpeg-1 video
-streams."
