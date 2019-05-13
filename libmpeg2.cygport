@@ -1,12 +1,13 @@
 NAME="libmpeg2"
 VERSION=0.5.1
-RELEASE=10
+RELEASE=11
 CATEGORY="Libs"
 SUMMARY="MPEG-1/2 video library"
 DESCRIPTION="libmpeg2 is a free library for decoding mpeg-2 and mpeg-1 video
 streams."
 HOMEPAGE="http://libmpeg2.sourceforge.net/"
 SRC_URI="http://libmpeg2.sourceforge.net/files/libmpeg2-${VERSION}.tar.gz"
+PATCH_URI="https://pkgs.rpmfusion.org/cgit/free/libmpeg2.git/plain/libmpeg2-inline.patch"
 
 PKG_NAMES="libmpeg2_0 libmpeg2-devel mpeg2dec"
 libmpeg2_0_CONTENTS='usr/bin/*-0.dll usr/share/doc/'
